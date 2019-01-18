@@ -1,0 +1,29 @@
+Java Application for Gmail 
+
+current phase: 4 (Tests from phase 1 and phase 2 are turned ON)
+
+branch for correction: master
+
+To run the project You need:
+- Make sure that your MySQL server is  running on your OS
+- Run  src/test/resources/CreateEmailAppDB.sql script in order to create new User And Database
+- Right click on prject -> Run Maven -> Run
+- Enjoy!
+
+
+System Environment
+The programming language is Java version 1.8 and the GUI is JavaFX.
+The Gluon Scene Builder, a visual editor, is used to create much of the GUI.
+
+The JAG(Java Application for Gmail) is depend on an external DBMS for its message store. The DBMS will be MySQL.
+Additional information on MySQL and downloads of the program can be found at http://www.mysql.com.
+
+The JDBC driver is Connector/J.
+Additional information on this library can be found at http://dev.mysql.com/downloads/connector/j/.
+The JAG is not dependent on any specific operating system. 
+
+It should be able to run on any computer that supports Java. 
+The help system use the Oracle Help for Java library 12.1.3.0.0. 
+
+Information on this library can be found at http://www.oracle.com/technetwork/topics/index-083946.html
+The library for accessing an email server is Jodd Email (https://jodd.org/email/). 

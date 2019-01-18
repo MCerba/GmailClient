@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cerbam.javaFX.controllers.WebViewController">
+    <stylesheets>
+        <URL value="@/styles/gmailroot.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <WebView fx:id="webView" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane prefHeight="115.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="129.0" layoutY="5.0" prefHeight="21.0" prefWidth="51.0" text="From: " />
+                  <ImageView fitHeight="72.0" fitWidth="81.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/emptyAvatar.jpg" />
+                     </image></ImageView>
+                  <Label layoutX="129.0" layoutY="26.0" prefHeight="21.0" prefWidth="51.0" text="To:" />
+                  <Label layoutX="129.0" layoutY="47.0" prefHeight="21.0" prefWidth="51.0" text="CC:" />
+                  <Label layoutX="129.0" layoutY="68.0" prefHeight="21.0" prefWidth="51.0" text="BCC:" />
+                  <Label layoutX="129.0" layoutY="91.0" prefHeight="21.0" prefWidth="51.0" text="Subject:" />
+                  <Label fx:id="from" layoutX="180.0" layoutY="4.0" prefHeight="21.0" prefWidth="51.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="to" layoutX="180.0" layoutY="25.0" prefHeight="21.0" prefWidth="51.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="cc" layoutX="180.0" layoutY="46.0" prefHeight="21.0" prefWidth="51.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="bcc" layoutX="180.0" layoutY="67.0" prefHeight="21.0" prefWidth="51.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="60.0" />
+                  <Label fx:id="subject" layoutX="180.0" layoutY="90.0" prefHeight="21.0" prefWidth="51.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="60.0" />
+                  <Button layoutX="529.0" layoutY="45.0" mnemonicParsing="false" onAction="#reply" prefHeight="10.0" prefWidth="57.0" text="Reply" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="45.0" />
+                  <Button layoutX="516.0" layoutY="77.0" mnemonicParsing="false" onAction="#replyAll" prefHeight="25.0" prefWidth="70.0" text="Reply All" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="77.0" />
+                  <Button layoutX="516.0" layoutY="13.0" mnemonicParsing="false" onAction="#forward" prefHeight="25.0" prefWidth="70.0" text="Forward" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="13.0" />
+                  <Button layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#deleteEmail" prefHeight="25.0" prefWidth="92.0" text="Delete Email " />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <HBox fx:id="attachmentsBox" prefHeight="19.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
