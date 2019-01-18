@@ -1,8 +1,6 @@
-Java Application for Gmail 
+This is multithreading Java Client application for Gmail 
 
-current phase: 4 (Tests from phase 1 and phase 2 are turned ON)
-
-branch for correction: master
+Last update: master
 
 To run the project You need:
 - Make sure that your MySQL server is  running on your OS
